@@ -53,7 +53,7 @@ void start_kernel(void *_t __attribute__((unused)), struct platform_info *pi,
 		      : [softirq_ret]"=r"(softirq_ret):);
 	puth(softirq_ret, 16);
 
-	while (1);
+	while (1)
 		cpu_halt();
 
 	/* ファイルシステムの初期化 */

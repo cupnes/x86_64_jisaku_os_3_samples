@@ -14,6 +14,6 @@ deploy: $(TARGET)
 	mv fs.img ../../../fs/
 
 clean:
-	rm -f *~ *.o *.map $(TARGET)
+	rm -f *~ *.o *.map $(TARGET) include/*~
 
 .PHONY: deploy clean

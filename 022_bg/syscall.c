@@ -36,7 +36,7 @@ unsigned long long do_syscall_interrupt(
 		break;
 
 	case SYSCALL_ENQ_TASK:
-		create_task(open((char *)arg1));
+		enq_task((struct file *)arg1);
 		break;
 	}
 

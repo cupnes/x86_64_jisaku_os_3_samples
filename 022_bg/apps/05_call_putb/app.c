@@ -4,7 +4,7 @@
 
 int main(void)
 {
-	enq_task("putb");
+	enq_task(open("putb"));
 
 	while (1) {
 		unsigned long long wait = WAIT_CLK;

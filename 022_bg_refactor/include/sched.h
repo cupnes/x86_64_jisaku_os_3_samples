@@ -3,6 +3,6 @@
 
 void sched_init(void);
 void sched_start(void);
-void create_task(struct file *f);
+void enq_task(struct file *f);
 
 #endif

@@ -36,7 +36,7 @@ void sched_init(void)
 	ptimer_setup(SCHED_PERIOD, schedule);
 }
 
-void create_task(struct file *f)
+void enq_task(struct file *f)
 {
 	unsigned long long start_addr = (unsigned long long)f->data;
 

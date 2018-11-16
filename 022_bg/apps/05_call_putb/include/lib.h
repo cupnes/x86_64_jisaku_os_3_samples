@@ -10,4 +10,4 @@ struct __attribute__((packed)) file {
 void putc(char c);
 struct file *open(char *file_name);
 void exec(struct file *file);
-void enq_task(char *file_name);
+void enq_task(struct file *file);

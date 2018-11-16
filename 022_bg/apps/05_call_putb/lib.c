@@ -37,7 +37,7 @@ void exec(struct file *file)
 	syscall(SYSCALL_EXEC, (unsigned long long)file, 0, 0);
 }
 
-void enq_task(char *file_name)
+void enq_task(struct file *file)
 {
-	syscall(SYSCALL_ENQ_TASK, (unsigned long long)file_name, 0, 0);
+	syscall(SYSCALL_ENQ_TASK, (unsigned long long)file, 0, 0);
 }
